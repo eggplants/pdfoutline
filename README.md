@@ -1,5 +1,25 @@
 # ![](img/bookmark_border-24px.svg) pdfoutline
 
+[![PyPI](
+  https://img.shields.io/pypi/v/pdfoutline
+  )](
+  https://pypi.org/project/pdfoutline/
+) [![ghcr image](
+  https://ghcr-badge.herokuapp.com/eggplants/pdfoutline/size
+  )](
+  https://github.com/eggplants/pdfoutline/pkgs/container/pdfoutline
+)
+
+[![Release Package](
+  https://github.com/eggplants/pdfoutline/actions/workflows/release.yml/badge.svg
+  )](
+  https://github.com/eggplants/pdfoutline/actions/workflows/release.yml
+) [![pre-commit.ci status](
+  https://results.pre-commit.ci/badge/github/eggplants/pdfoutline/master.svg
+  )](
+  https://results.pre-commit.ci/latest/github/eggplants/pdfoutline/master
+)
+
 A command line tool for adding an outline (a bookmark, or table of contents) to pdf files.
 
 ## Prerequisites
