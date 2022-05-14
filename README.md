@@ -2,7 +2,7 @@
 
 A command line tool for adding an outline (a bookmark, or table of contents) to pdf files.
 
-### Prerequisites
+## Prerequisites
 
 Make sure you have `ghostscript` installed.
 
@@ -16,11 +16,31 @@ sudo apt install ghostscript
 
 `ghostscript` for windows can be installed from [the official website](https://www.ghostscript.com/releases/gsdnld.html)
 
-### Sample output
+## Usage
+
+```shellsession
+$ pip install pdfoutline
+...
+
+$ pdfoutline sample.pdf sample.toc sample-out.pdf
+ |██████████████████████----------------------------| 118/263
+```
+
+optionally, the ghost script executable can be specified as well
+
+```sh
+pdfoutline sample.pdf sample.toc sample-out.pdf --gs_path 'C:\Program Files\gs\gs9.55.0\bin\gswin64.exe'
+```
+
+## Demo
+
+![demo](img/demo.png)
+
+Sample output:
 
 ![sample](img/demo-output.png)
 
-### Sample Table of contents file: `sample.toc`
+## Sample Table of contents file: `sample.toc`
 
 ```toc
 # this is a comment
@@ -38,18 +58,3 @@ Second Chapter 10
     some entry 11
 ```
 
-### Usage
-
-```shellsession
-$ pip install pdfoutline
-...
-
-$ pdfoutline sample.pdf sample.toc sample-out.pdf
- |██████████████████████----------------------------| 118/263
-```
-
-optionally, the ghost script executable can be specified as well
-
-```sh
-pdfoutline sample.pdf sample.toc sample-out.pdf --gs_path 'C:\Program Files\gs\gs9.55.0\bin\gswin64.exe'
-```
